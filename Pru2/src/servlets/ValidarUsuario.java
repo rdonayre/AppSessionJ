@@ -15,6 +15,8 @@ import bean.RespuestaSimple;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import db.Conexion;
+
 public class ValidarUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -35,10 +37,21 @@ public class ValidarUsuario extends HttpServlet {
 
 	private void hacer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		session.setMaxInactiveInterval(10000); 
+		session.setMaxInactiveInterval(10);
+		
+		try {
+			Conexion cnn = new Conexion(); 
+			System.out.println("esta cerrado': "+cnn.conectar().isClosed());
+			
+		} catch (Exception e1) {
+			System.out.println("mensaje error: "+e1.getMessage());
+			e1.printStackTrace();
+		}
 		
 		Long ultimoAcceso = session.getLastAccessedTime();
-		System.out.println("ultimoAcceso: "+new Date(ultimoAcceso));
+		System.out.println(this.getServletName()+" ultimoAcceso: "+new Date(ultimoAcceso));
+		System.out.println(this.getServletName()+" Id: "+session.getId());
+		System.out.println(this.getServletName()+" MaxInactividad: "+session.getMaxInactiveInterval());
 		
 		PrintWriter out = response.getWriter();
 		
@@ -60,6 +73,7 @@ public class ValidarUsuario extends HttpServlet {
 					} else {
 						rpta.setRespuesta("Copyright");
 						rpta.setMensaje("Por favor no jugar");
+						session.invalidate();
 					}
 					break;
 				case 1: //Login
@@ -70,22 +84,26 @@ public class ValidarUsuario extends HttpServlet {
 					}else{
 						rpta.setRespuesta("False");
 						rpta.setMensaje("Error en nombre de usuario o password");
+						session.invalidate();
 					}
 					break;
 				case 2: //Cerrar Sesion
 					username = (String) session.getAttribute("user")==null?"X":(String)session.getAttribute("user");
 					if(!username.equals("X")){
-						session.removeAttribute("user");//abarrios
+						session.removeAttribute("user");
 						rpta.setRespuesta("True");
 						rpta.setMensaje("index.jsp");
+						session.invalidate();
 					} else {
 						rpta.setRespuesta("Copyright");
 						rpta.setMensaje("Por favor no jugar");
+						session.invalidate();
 					}
 					break;
 				default:
 					rpta.setRespuesta("False");
 					rpta.setMensaje("Error al conectar");
+					session.invalidate();
 					break;
 			}
 			
@@ -93,6 +111,7 @@ public class ValidarUsuario extends HttpServlet {
 			System.out.println("Entra a Exception");
 			rpta.setRespuesta("False");
 			rpta.setMensaje("Error: "+ e.getMessage());
+			session.invalidate();
 		} finally {
 			dataLista = gson.toJson(rpta);
 			//System.out.println("data: "+dataLista);
@@ -103,7 +122,6 @@ public class ValidarUsuario extends HttpServlet {
 	
 	private void hacerErrorGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		session.setMaxInactiveInterval(10000); 
 		
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");

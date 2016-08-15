@@ -4,7 +4,7 @@
 	
 	//CONTROLA SESSION
 	if ( ( usuario == null || usuario.equalsIgnoreCase("") ) ) {
-		System.out.println("usuario mal");
+		System.out.println("ValidaSesion.jsp -> usuario mal");
 		procesar = false;
     }
 
