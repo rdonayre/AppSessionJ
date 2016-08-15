@@ -1,0 +1,448 @@
+body, html {
+	margin					: 0;
+	padding					: 0;
+	height					: 100%;
+}
+
+
+/*body {
+    background				: url(../images/login_fondo.jpg) no-repeat fixed center top;
+    -webkit-background-size	: cover;
+    -moz-background-size	: cover;
+    -o-background-size		: cover;
+    background-size			: cover;
+    
+}*/
+
+ /**/
+ 
+ img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+#cabecera_login {
+	background-color		: #E31C17;
+	width					: 100%;
+	height					: 90px;
+	min-width				: 990px;
+}
+
+#cabecera_login div {
+	color					: #FFFFFF;
+	padding					: 0;
+	margin					: 20px 0 0 50px;
+	font-size				: 40px;
+	/*width					: 60%;*/
+	min-width				: 650px;
+	float					: left;
+	font-weight				: bold;
+}
+
+#content_login {
+	width					: 450px;
+	height					: 160px;
+	font-size				: 14px;
+	bottom					: 200px;
+	margin-left				: 40px;
+	background				: /*#000000;*/ /*rgb(227,28,23)*/url(../images/fondo_div_loginNuevo.png) repeat-x;
+	opacity					: 1.0; 
+	position				: absolute;
+	left					: 0;
+	color					: #FFFFFF;
+	font-family				: arial;
+	color: #0000000;
+	border-radius			: 10px;
+}
+
+
+.form_login {
+	width					: 430px;
+	float					: left;
+	margin-top				: 30px;
+}
+
+.form_login p {
+	color					: #F7F8E0;
+	margin-top				: 0;
+}
+
+.form_login .label {
+	width					: 130px;
+	color					: #FFC000;
+	font-weight				: bold;
+	height					: 25px;
+	padding-left			: 45px;
+}
+
+.form_login input {
+	height					: 20px;
+	width					: 200px;
+	border-radius			: 4px;
+	font-size				: 12px; 
+}
+
+.form_login input[type=submit] {
+	width					: 205px;
+	background-color		: #C91814;
+	height					: 30px;
+	color					: #FFFFFF;
+	border					: 0;
+	font-weight				: bold;
+	margin-left				: 178px;
+	border-radius			: 4px; 
+	font-family: Arial;
+}
+
+/****************/
+
+#cabecera {
+	width				: 100%;
+	min-width			: 440px;
+	height				: 85px;
+	background			: #E31C17; /*url(../images/fondo_cabecera.jpg);*/
+	color				: #FFFFFF;
+	
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+
+#cabecera .imagen {
+	min-width			: 134px;
+	height				: 85px;
+}
+
+#cabecera .titulo {
+	min-width			: 163px;
+	height				: 85px;
+}
+
+#cabecera .titulo label {
+	display				: block;
+	float				: left;
+}
+
+#cabecera .titulo label.system_name {
+	margin-top			: 18px;/**13px**/
+	font-size			: 39px;
+	border-right		: 2px solid #FFFFFF;
+	padding-right		: 7px;
+	
+	padding-left: 10px;
+	font-family:Arial;
+	font-weight: bold; 
+}
+
+#cabecera .titulo label.system_descript {
+	font-size			: 19px; /**14px**/
+	margin-left			: 5px;
+	margin-top			: 30px;
+	
+	font-family:Arial; 
+}
+
+#cabecera .opciones {
+	min-width			: 101px;
+	text-align			: right;
+	font-size			: 13px;
+	/*padding-top			: 55px;*/
+	/*height				: 85px;*/
+}
+
+#cabecera .opciones a {
+	margin-top			: 35px;
+}
+
+#navegador {
+	width				: 980px;
+	margin				: 10px auto;
+	height				: 50px;
+}
+
+#menu {
+	font-size			: 13px;
+	list-style			: none;
+	padding				: 0;
+	margin				: 0;
+	width				: 100%;
+	height				: 100%;
+}
+
+#menu li.menu-item {
+	float				: left;
+	margin				: 8px 0;
+	height				: 34px;
+	padding				: 0 7px;
+	border-right		: 1px solid #FFFFFF;
+	position			: relative;
+}
+
+#menu li.last_item {
+	border-right		: 0;	
+}
+
+#menu li.menu-item a {
+	text-decoration		: none;
+	color				: #000000;
+	padding				: 8px 0 0 0;
+	display				: block;
+	height				: 26px;
+}
+
+#menu li.menu-item:hover {
+	background-color	: #B2B2B2;
+}
+
+#menu_left {
+	width				: 8px;
+	height				: 50px;
+	background			: url(../images/fondo_menu_left.jpg);
+}
+
+#menu_center {
+	width				: 964px;
+	background-color	: #CCCCCC;
+	height				: 50px;
+}
+
+#menu_right {
+	width				: 8px;
+	height				: 50px;
+	background			: url(../images/fondo_menu_right.jpg);
+}
+
+.submenu {
+	list-style			: none;
+	padding				: 0;
+	margin				: 0;
+	position			: absolute;
+	min-width			: 290px;
+	width				: auto;
+	background-color	: #DFDFDF;
+	left				: 0;
+	filter				: alpha(opacity=100);
+	z-index				: 9999;
+}
+
+.submenu li {
+	display				: block !important;
+	margin				: 0 !important;
+	height				: 37px;
+	padding				: 0 4px !important;
+	border-bottom		: 1px solid #FFFFFF;
+	float				: none;
+	width				: 100%;
+	border-right		: 0 !important;
+	filter				: alpha(opacity=100);
+	z-index				: 9999;
+	width				: 100%;
+}
+
+.submenu li a {
+	color				: #000000 !important;
+}
+
+.submenu li:hover {
+	background-color	: #e31c17 !important;
+}
+
+.submenu li:hover a {
+	color				: #FFFFFF !important;
+}
+
+#cuerpo {
+	width				: 980px;
+	margin				: auto;
+}
+
+#cuerpo .accesos_rapido {
+	/*width				: 100%;*/
+	height				: 190px;
+	margin				: 15px auto;	
+}
+
+#cuerpo .accesos_rapido .acceso_first {
+	background			: url(../images/acceso_left.jpg);
+	width				: 7px;
+	height				: 190px;
+}
+
+#cuerpo .accesos_rapido .acceso_last {
+	background			: url(../images/acceso_right.jpg);
+	width				: 8px;
+	height				: 190px;
+}
+
+#cuerpo .accesos_rapido .acceso {
+	width				: 236px;
+	height				: 190px;
+	border-bottom		: 1px solid #CCCCCC;
+}
+
+#cuerpo .accesos_rapido .acceso .h_acceso {
+	color				: #0066CC;
+	text-align			: center;
+	font-size			: 14px;
+	background			: url(../images/fondo_cabecera_acceso.jpg);
+	height				: 35px;
+	padding-top			: 8px;
+}
+
+#cuerpo .accesos_rapido .acceso .b_acceso {
+	text-align			: center;
+	height				: 105px;
+	margin-top			: 4px;
+	border-right		: 1px solid #000000;
+	opacity				: 0.5;
+	filter				: alpha(opacity=50);
+	cursor				: pointer;
+	padding-top			: 31px;
+}
+
+#cuerpo .accesos_rapido .acceso .b_acceso:hover {
+	opacity				: 1;
+	filter				: alpha(opacity=100);
+}
+
+#pie_pagina {
+	width				: 100%;
+	height				: 40px;
+	margin				: -55px auto 0;
+	background-color	: #E31C17;
+	text-align			: center;
+	color				: #FFFFFF;
+	font-size			: 12px;
+	filter				: alpha(opacity=85);
+	opacity				: 0.85;
+	clear				: both;
+}
+
+.left {
+	float				: left;
+}
+
+.right {
+	float				: right;
+}
+
+div.win_loading {
+	filter				: alpha(opacity=50);
+	background-color	: #FFFFFF;
+	width				: 100%;
+	height				: 100%;
+	position			: absolute;
+	opacity				: 0.8;
+	z-index				: 999;
+}
+
+div.win_loading img {
+	position			: relative;
+	left				: 46%;
+	top					: 45%;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family			: Arial,sans-serif !important;
+}
+
+.ui-widget {
+	font-family			: Arial,sans-serif !important;
+}
+
+.icon-refresh-disabled {
+	background-image	: url(../icons/refresh-disabled.gif) !important;
+	background-repeat	: no-repeat;
+}
+
+.icon-cancel {
+	background-image	: url(../icons/return.png) !important;
+	background-repeat	: no-repeat;
+}
+
+#modal_roles {
+	filter				: alpha(opacity=30);
+	opacity				: 0.3;
+	background-color	: #FFFFFF;
+	width				: 332px;
+	height				: 320px;
+	position			: absolute;
+	z-index				: 99;
+}
+
+#modal_ambitos {
+	filter				: alpha(opacity=30);
+	opacity				: 0.3;
+	background-color	: #FFFFFF;
+	width				: 406px;
+	height				: 180px;
+	position			: absolute;
+	z-index				: 99;
+}
+
+.ui-widget-overlay {
+	opacity: 0.7
+}
+
+#resumenCalificacionesOM {
+	width:320px; 
+	height:230px; 
+	position: fixed; 
+	bottom:10px; 
+	right: 10px; 
+	display: none;
+	border: 1px solid #AAAAAA;
+	background-color: #FFFFFF;
+	padding: 5px;
+}
+
+.errorEncontrado {
+	border: 1px solid #C60B2A;
+	background-color: #F9EDB8;
+}
+
+.seleccionable {
+	-moz-user-select: text;
+	-o-user-select: text;
+	-khtml-user-select: text;
+	-webkit-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	cursor: text;
+}
+
+.no_seleccionable {
+	-moz-user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+#panel_componentes {
+	filter				: alpha(opacity=30);
+	opacity				: 0.3;
+	background-color	: #FFFFFF;
+	width				: 265px;
+	height				: 300px;
+	position			: absolute;
+	z-index				: 99;	
+}

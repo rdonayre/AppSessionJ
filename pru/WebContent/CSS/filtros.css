@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+
+.textosf{
+		font-size: 11px;
+		font-family: Verdana, Arial;
+		}
+.tfiltro
+	{
+		font-size: 11px;
+		font-family: Arial, Verdana;
+		font-weight: bold;
+		padding-left:10px;
+	}
+	
+.ofiltro
+	{
+		padding-left:30px;  
+	}	
+	

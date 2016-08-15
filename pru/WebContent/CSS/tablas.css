@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+.table { border-width: 1px; border-style: solid; border-color:#999; border-collapse: collapse; }
+.th{
+	border-width: 1px;
+	border-style: solid;
+	border-color:#999;
+	/*color: #C60;*/
+	font-size:11px;
+}
+
+.tablacab{ text-align:center; font-weight: bold; font-size:11px; color:#C60;}
+.tabtexto{font-size:11px; text-align:justify; color:#960;}
+.tablink{ color: #960; font-weight:bold; text-align:justify; font-size:12px;}
+.tabedit{font-size:10px; font-weight:normal;}
+.botonedit{
+	border: 1px solid #A53239;
+	/*border: 0px;*/
+	border-right: 1px solid #A53239;
+	background-image: url(images/bgbutton.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	/*border: 0px;*/
+	/*background-color: #CBD6D4;*/
+	border-right: 1px solid #A53239;
+	font-size:10px;
+	height:20px;
+}
+.botoncontrol{
+	border: 1px solid #A53239;
+	/*border: 0px;*/
+	border-right: 1px solid #A53239;
+	background-image: url(images/bgbutton.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	/*border: 0px;*/
+	/*background-color: #CBD6D4;*/
+	border-right: 1px solid #A53239;
+	font-size:10px;
+	height:10px;
+	width:175px;
+}
+.est{
+	font-size:11px;
+	}
+	
+

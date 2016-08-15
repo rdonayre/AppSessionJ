@@ -1,0 +1,433 @@
+/*
+ * @author Jorge Barnaby
+ */
+
+body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+dl,
+dt,
+dd
+{
+	
+}
+dl
+{
+	
+}
+dt
+{
+	
+}
+dd
+{
+	text-align: justify;
+	font-size: 0.9em;
+}
+
+ul,
+ol
+{
+	
+}
+li
+{
+	
+}
+
+h1
+{
+	font-family: "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1.7em;
+	font-weight: normal;
+	width: auto;
+}
+
+h2
+{
+	font-size: 1.4em;
+	font-weight: normal;
+}
+h3
+{
+	font-family: "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-weight: normal;
+}
+
+h4
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+a:link,
+a:active,
+a:visited
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+body#mainBody
+{
+	
+}
+
+div#footer
+{
+	font-size: 0.6em;
+	text-align: center;
+}
+
+div#header
+{
+	
+}
+
+div#main
+{
+	font-size: 0.9em;
+}
+
+div#main_top
+{
+	
+}
+
+div#mainmenu {
+	font-size: 0.8em;
+}
+
+div#nav_plan
+{
+
+}
+div#nav_plan > div
+{
+
+}
+div#nav_plan div.content
+{
+	font-size: 0.95em;
+}
+div#nav_plan h3
+{
+	/*font-size: 1.1em;*/
+	font-size:12px;
+	font-weight: bold;
+}
+div#nav_plan h3 a:link,
+div#nav_plan h3 a:active,
+div#nav_plan h3 a:visited
+{
+
+}
+div#nav_plan h3 a:hover
+{
+	
+}
+div#nav_plan h4
+{
+	/*font-size: 1.1em;
+	font-weight: bold;*/
+}
+
+div#pathway
+{
+	font-size: 0.9em;
+}
+div#pathway a:link,
+div#pathway a:active,
+div#pathway a:visited
+{
+	
+}
+div#pathway a:hover
+{
+	
+}
+
+div.anio_nav
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: left;
+}
+div.anio_nav a:link,
+div.anio_nav a:active,
+div.anio_nav a:visited
+{
+	
+}
+div.anio_nav a:hover
+{
+	
+}
+
+div.plan_info
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: right;
+}
+	
+div.session_info
+{
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: right;
+}
+
+h4.reporte
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h4.expandcollapse img
+{
+	
+}
+h4.expandcollapse a:link,
+h4.expandcollapse a:active,
+h4.expandcollapse a:visited
+{
+	font-size: 0.8em;
+	font-weight: normal;
+}
+h4.expandcollapse a:hover
+{
+	
+}
+
+p.error_msg {
+	text-align: center;
+}
+
+span.area_n1
+{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+span.area_n2
+{
+	font-weight: bold;
+	padding-left: 7px;
+}
+
+span.area_n3
+{
+	font-weight: normal;
+	padding-left: 15px
+}
+
+span.area_n4
+{
+	font-weight: normal;
+	padding-left: 25px
+}
+
+span.btn_cambio_plan
+{
+	font-size: 0.8em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+span.btn_detalle,
+span.btn_editar,
+span.btn_eliminar,
+span.btn_comentario,
+span.btn_terminar
+{
+	font-size: 0.8em;
+	font-weight: normal;
+}
+span.btn_detalle img,
+span.btn_editar img,
+span.btn_eliminar img
+{
+	
+}
+span.btn_detalle a
+{
+	
+}
+span.btn_editar a,
+span.btn_eliminar a,
+span.btn_terminar a
+{
+	
+}
+
+table.reporte
+{
+	font-size: 0.8em;
+}
+table.reporte th
+{
+	font-weight: bold;
+	text-align: center;
+}
+table.reporte td
+{
+	text-align: center;
+}
+
+table.valores
+{
+	
+}
+
+table.valores th
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+table.valores td
+{
+	text-align: center;
+}
+
+table.valores td.resultado_neg{
+	
+}
+table.valores td.resultado_med{
+
+}
+table.valores td.resultado_pos{
+	
+}
+
+table.items {
+	
+}
+
+table.items td
+{
+	
+}
+table td.texto
+{
+	text-align: justify;
+}
+table td.valor1,
+table th.valor1,
+table td.valor2,
+table th.valor2
+{
+	text-align: right;
+}
+
+table td.valor1
+{
+
+}
+
+table td.valor2
+{
+
+}
+
+table th.valor1
+{
+
+}
+
+table th.valor2
+{
+
+}
+
+ul.paginacion
+{
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+ul.paginacion li
+{
+
+}
+ul.paginacion li a:link,
+ul.paginacion li a:active,
+ul.paginacion li a:visited
+{
+
+}
+ul.paginacion li a:hover
+{
+
+}
+
+ul.opciones
+{
+	font-size: 0.7em;
+	text-transform: uppercase;
+}
+ul.opciones li
+{
+
+}
+ul.opciones li a:link,
+ul.opciones li a:active,
+ul.opciones li a:visited
+{
+
+}
+ul.opciones li a:hover
+{
+
+}
+
+.borderless
+{
+}
+
+.center
+{
+	text-align: center;
+}
+
+.clear
+{
+	
+}
+
+.hide
+{
+	
+}
+
+.left
+{
+	
+}
+
+.right
+{
+	
+}
+
+.titulosVarios{
+	text-transform: uppercase;
+	font-size:11px; 
+}
+
+.textoAvance{
+	text-align:center; 
+	color: blue; 
+	background: transparent;
+	border: none;
+}
