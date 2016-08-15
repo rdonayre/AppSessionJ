@@ -31,7 +31,7 @@ public class Conexion {
             cnn = ds.getConnection();
         } catch (Exception e) {
             System.out.println("Exception thrown " + e);
-            throw new Exception(e);
+            //throw new Exception(e);
         } 
         return cnn;
     }
