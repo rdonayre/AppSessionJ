@@ -45,7 +45,8 @@ public class WebAppListener implements ServletContextListener {
 			AppInfo.Info(contexto, version, database, usuario, server);
 			
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println(e.toString());
+			//e.printStackTrace();
 		}
     }
 
