@@ -30,8 +30,9 @@ public class WebAppListener implements ServletContextListener {
 			Connection cn = cnn.conectar();
 			DatabaseMetaData dmd = cn.getMetaData();
 			String usuario = dmd.getUserName().split("@")[0];
-			String server = dmd.getUserName().split("@")[1];
-			String database = cn.getCatalog();
+			String server = dmd.getURL().split(":")[2].toString().substring(2);
+			String database = dmd.getURL().split(":")[3].toString().split("/")[1];
+			//String database = cn.getCatalog();
 			String version = Constantes.VERSION_SISTEMA;
 			sc.setAttribute("APP_NAME", contexto);
 			sc.setAttribute("SERVER_DB", server);
