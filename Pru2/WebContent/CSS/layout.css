@@ -1,0 +1,555 @@
+/*
+ * @author Jorge Barnaby
+ */
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	/*width: 100%;*/ 
+}
+
+div#contenedor {
+	width				: 100%;
+	height				: auto;
+	min-height			: 100%;
+	margin				: auto;
+}
+
+div#contenedor:after {
+	width				: 100%;
+	height				: 40px;
+	display				: block;
+	clear				: both;
+}
+
+
+
+dl,
+dt,
+dd
+{
+
+}
+dl
+{
+	
+}
+dt
+{
+	margin: 5px 0px 0px 0px;
+	padding: 5px 0px 5px 0px;
+}
+dd
+{
+	display: inline;
+	margin: 0px;
+	padding: 5px 10px 5px 50px;
+}
+
+ul,
+ol
+{
+	
+}
+li
+{
+	
+}
+
+hr
+{
+	display: none;
+}
+
+h1
+{
+	position: absolute;
+	top: 8px;
+	left: 25px;
+	margin: 0px;
+	padding: 0px;
+	height: 60px;
+	width: 500px;
+}
+
+h2
+{
+	display: none;
+}
+
+h3
+{
+	display: block;
+	margin: 10px 0px;
+	padding: 0px;
+}
+
+h4
+{
+	margin: 5px 0px 5px 0px;
+	padding: 0px;
+}
+
+a:link,
+a:active,
+a:visited
+{
+	
+}
+
+a:hover
+{
+
+}
+
+body#mainBody
+{
+	padding: 0px 15px 0px 15px;
+}
+
+div#cambio_plan
+{
+	display: none;
+}
+
+div#content
+{
+	padding: 10px 15px 10px 15px;
+	border: 0px;
+}
+
+div#error_msg
+{
+	display: none;
+}
+
+div#footer
+{
+	padding: 5px 10px 10px 10px;
+	margin: 0px;
+	
+	/*width				: 100%;
+	height				: 40px;
+	margin				: -55px auto 0;
+	background-color	: #E31C17;
+	text-align			: center;
+	color				: #FFFFFF;
+	font-size			: 12px;
+	filter				: alpha(opacity=85);
+	opacity				: 0.85;
+	clear				: both;	*/
+	
+}
+
+div#header
+{
+	height: 75px;
+	margin: 0px 0px 5px 0px;
+	padding: 0px;
+}
+
+div#main
+{
+	margin: 0px -10px 3px -10px;
+	padding: 0px;
+}
+
+div#main_top
+{
+	display: block;
+	padding: 5px;
+	margin: 0px 0px 5px 0px;
+	height: 22px;
+}
+
+div#mainmenu
+{
+	height: 30px;
+	margin: 0px;
+	padding: 0px;
+}
+div#mainmenu h3
+{
+	display: none;
+}
+
+div#nav_plan
+{
+	padding: 5px;
+}
+div#nav_plan > div
+{
+	margin: 0px 0px 10px 0px;
+}
+div#nav_plan div.content
+{
+	margin: 4px 0px 0px 0px;
+	padding: 3px 15px 10px 15px;
+}
+div#nav_plan div.content dl
+{
+	margin: 0px 0px 15px 0px;
+	padding: 0px;
+}
+div#nav_plan div.content dt
+{
+	/*float: left;
+	clear: left;
+	width: 10em;
+	text-align: right;
+	margin: 0.5em 0;
+	margin-right: 1em;*/
+}
+div#nav_plan div.content dd
+{
+	/*float: left;
+	margin: 0.5em 0;*/
+}
+div#nav_plan h3
+{
+	margin: 10px 0px 3px 0px;
+	padding: 0px;
+}
+div#nav_plan h3 a:link,
+div#nav_plan h3 a:active,
+div#nav_plan h3 a:visited
+{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+div#nav_plan h3 a:hover
+{
+
+}
+div#nav_plan h4
+{
+
+}
+
+
+div#pathway
+{
+	margin: 0px 0px 10px 0px;
+	padding: 5px;
+	clear: both;
+}
+div#pathway a:link,
+div#pathway a:active,
+div#pathway a:visited
+{
+
+}
+div#pathway a:hover
+{
+
+}
+
+div#reporte_filtro
+{
+	display: none;
+}
+
+div#skip
+{
+	display: none;
+}
+
+div.anio_nav
+{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+div.anio_nav a:link,
+div.anio_nav a:active,
+div.anio_nav a:visited
+{
+
+}
+div.anio_nav a:hover
+{
+
+}
+
+div.barra_check
+{
+	width: 25px;
+	float: left;
+	margin: 0px 0px 0px -25px;
+	padding: 0px;
+}
+
+div.barra_nombre
+{
+	width: 100%;
+
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.border_left
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+div.border_right
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+div.plan_info
+{
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+
+div.session_info
+{
+	margin: 10px 5px 5px 5px;
+	padding: 5px;
+}
+
+dt.expandcollapse dt
+{
+	
+}
+
+h4.reporte
+{
+	margin: 5px 0px 5px 0px;
+	padding: 5px;
+}
+
+h4.expandcollapse
+{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+/*h4.expandcollapse img
+{
+	margin: 0px 0px 0px -6px;
+	padding: 0px;
+}*/
+h4.expandcollapse a:link,
+h4.expandcollapse a:active,
+h4.expandcollapse a:visited
+{
+	margin: 5px 0px 0px 5px;
+	padding: 0px;
+}
+h4.expandcollapse a:hover
+{
+	margin: 5px 0px 0px 5px;
+	padding: 0px;
+}
+
+p.comentario {
+	display: none;
+	padding: 5px 10px;
+	margin: 5px;
+}
+
+p.error_msg {
+	margin: 5px;
+	padding: 5px;
+}
+span.chk
+{
+
+}
+span.btn_editar
+{
+
+}
+span.btn_eliminar
+{
+
+}
+span.btn_terminar
+{
+
+}
+
+span.btn_detalle,
+span.btn_editar,
+span.btn_eliminar,
+span.btn_terminar
+{
+	margin: 0px;
+	display: inline;
+}
+span.btn_detalle img,
+span.btn_editar img,
+span.btn_eliminar img
+{
+
+}
+span.btn_detalle a
+{
+	padding: 1px 0px 1px 0px;
+	margin: 0px 2px 0px 2px;
+}
+span.btn_editar a,
+span.btn_eliminar a,
+span.btn_terminar a
+{
+	padding: 1px 0px 1px 10px;
+	margin: 0px 2px 0px 2px;
+}
+
+span.btn_seleccion
+{
+	
+}
+
+span.opcion
+{
+	padding-right: 10px;
+	
+}
+
+table td a
+{
+	display: block;
+}
+
+table.reporte
+{
+	width: 100%;
+}
+table.reporte th
+{
+	padding: 2px;
+}
+table.reporte td
+{
+	padding: 2px;
+}
+
+table.valores
+{
+	/*padding: 10px;*/
+}
+
+table.valores th
+{
+	padding: 3px;
+}
+
+table.valores td
+{
+	padding: 2px;
+}
+
+table.valores td.resultado_neg{
+
+}
+
+table.valores td.resultado_med{
+
+}
+
+table.valores td.resultado_pos{
+
+}
+
+table.items {
+	
+}
+
+table.items td
+{
+	padding: 3px;
+}
+
+ul.paginacion
+{
+	list-style: none;
+	margin: 10px 10px 0px 10px;
+	padding: 0px;
+	height: 22px;
+}
+ul.paginacion li
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+ul.paginacion li a:link,
+ul.paginacion li a:active,
+ul.paginacion li a:visited
+{
+	display: block;
+	margin: 0px;
+	padding: 5px;
+}
+ul.paginacion li a:hover
+{
+
+}
+
+ul.opciones
+{
+	list-style: none;
+	margin: 10px 10px 0px 10px;
+	padding: 0px;
+	height: 22px;
+}
+ul.opciones li
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+ul.opciones li a:link,
+ul.opciones li a:active,
+ul.opciones li a:visited
+{
+	display: block;
+	margin: 0px;
+	padding: 5px;
+}
+ul.opciones li a:hover
+{
+	
+}
+
+.borderless
+{
+
+}
+
+.center
+{
+	
+}
+
+.clear
+{
+	clear: both;
+}
+
+.hide
+{
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
+}

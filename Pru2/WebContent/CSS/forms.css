@@ -1,0 +1,340 @@
+a.squarebutton {
+	background: transparent url('images/square-gray-left.gif') no-repeat top
+		left;
+	display: block;
+	float: right;
+	font: normal 10px Arial;
+	line-height: 15px;
+	height: 23px;
+	padding-left: 9px;
+	text-decoration: none;
+}
+
+a:link .squarebutton,a:visited .squarebutton,a:active .squarebutton {
+	color: #494949;
+
+}
+
+a.squarebutton span {
+	background: transparent url('images/square-gray-right.gif') no-repeat
+		top right;
+	display: block;
+	padding: 4px 9px 4px 0;
+}
+
+a.squarebutton:hover {
+	background-position: bottom left;
+}
+
+a.squarebutton:hover span {
+	background-position: bottom right;
+	color: black;
+}
+
+/****************************/
+a.squarebuttonImage {
+	background: transparent url('images/square-gray-left2.gif') no-repeat top
+		left;
+	display: block;
+	float: right;
+	font: normal 10px Arial;
+	font-weight: bold;
+	line-height: 15px;
+	height: 23px;
+	width: auto;
+	padding-left: 9px;
+	text-align: center;
+	text-decoration: none;
+	 
+}
+a:link .squarebuttonImage,a:visited .squarebuttonImage,a:active .squarebuttonImage {
+	color: #494949;
+}
+
+a.squarebuttonImage span {
+	background: transparent url('images/square-gray-right2.gif') no-repeat
+		top right;
+	display: block;
+	padding: 4px 9px 4px 0;
+		height: 15px;
+		/*vertical-align:middle;*/ 
+}
+
+a.squarebuttonImage:hover {
+	background-position: bottom left;
+}
+
+a.squarebuttonImage:hover span {
+	background-position: bottom right;
+	color: black;
+}
+
+/**************************************/
+buttonwrapper {
+	overflow: hidden;
+	width:100%;
+}
+/************************************/
+
+label
+{
+
+}
+
+input,
+textarea,
+select
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 2px;
+	margin: 0px;
+	border: 1px solid #828194;
+	border-radius: 3px; 
+	
+	/*background-color: #F6FAE6;*/
+}
+
+select
+{
+	padding: 2px;
+}
+
+input.readonly
+{
+	background-color: #eee;
+}
+
+
+input.boton
+{
+	font-size: 0.9em;
+	background-color: white;
+	background-image: url(images/bgbutton.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	padding: 3px 5px 3px 5px;
+}
+
+input.btnImp
+{
+	font-size: 1.1em;
+	background-color: white;
+	background-image: url(images/bgbutton.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	padding: 3px 5px 3px 5px;
+	height: 23px;
+}
+
+input.nombre
+{
+	width: 550px;
+}
+
+input.valor_corto,
+input.valor_largo
+{
+	text-align: right;
+}
+
+input.valor_corto
+{
+	width: 25px;
+}
+
+input.valor_largo
+{
+	width: 60px;
+}
+
+input.valor_orden
+{
+	width: 20px;
+}
+
+textarea.comentario
+{
+	width: 550px;
+	height: 100px;
+}
+ input.etiqueta
+ {
+ 	text-transform: uppercase;
+ 	text-align: center;
+ }
+
+/*--------------------------------------*/
+.form_cmxform_fieldset
+{
+	font-size: 11px;
+	border: 1px solid #CCC;
+	margin: 0px;
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: inherit;
+	border-radius: 3px;
+}
+
+.form_cmxform_legend
+{
+	font-size: 11px;
+	padding: 2px 4px;
+	font-weight: bold;
+	margin: 0 -7px;
+	color: #000; /*#68552D;*/
+}
+.form_cmxform_label
+{
+	font-size: 11px;
+	color: #000;
+	display: inline-block;
+	line-height: 2.1;
+	vertical-align: top;
+}
+.form_cmxform_fieldset_ol
+{
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #CCCCCC; /*#CF747C;*/
+}
+
+.form_cmxform_fieldset_li
+{
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+	border-bottom: 1px solid #CCCCCC; /*#CF747C;*/
+}
+.form_cmxform_fieldset_fieldset
+{
+
+	border: 1px solid #CCC;
+	margin: 3px 0 0;
+}
+.form_cmxform_fieldset_fieldset_legend
+{
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+.form_cmxform_fieldset_fieldset_label
+{
+	display: block;
+	width: auto;
+}
+.form_cmxform_em
+{
+	font-weight: bold;
+	font-style: normal;
+	color: #f00;
+}
+.form_cmxform_label
+{
+	width: 150px;
+}
+
+.form_cmxform_label_texto
+{
+	width: 20px;
+}
+
+.form_cmxform_fieldset_fieldset_label
+{
+	margin-left: 20px; 
+}
+.form_cmxform_fieldset.borderless
+{
+	border: 0px;
+}
+.form_cmxform_label.error,
+label.error {
+	display: none;
+	color: red;
+	font-style: italic;
+	width: 90%;
+	line-height: 1em;
+	font-size: 0.9em;
+	padding: 0px 0px 0px 15px;
+}
+/******************************************/
+
+/*form.cmxform fieldset
+{
+	border: 1px solid #CCC;
+	margin: 0px;
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: inherit;
+}
+form.cmxform legend
+{
+	padding: 2px 4px;
+	font-weight: bold;
+	margin: 0 -7px;
+	color: #68552D;
+}
+form.cmxform label
+{
+	display: inline-block;
+	line-height: 2.1;
+	vertical-align: top;
+}
+form.cmxform fieldset ol
+{
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #CF747C;
+}
+
+form.cmxform fieldset li
+{
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+	border-bottom: 1px solid #CF747C;
+}
+form.cmxform fieldset fieldset
+{
+
+	border: 1px solid #CCC;
+	margin: 3px 0 0;
+}
+form.cmxform fieldset fieldset legend
+{
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+form.cmxform fieldset fieldset label
+{
+	display: block;
+	width: auto;
+}
+form.cmxform em
+{
+	font-weight: bold;
+	font-style: normal;
+	color: #f00;
+}
+form.cmxform label
+{
+	width: 150px;
+}
+form.cmxform fieldset fieldset label
+{
+	margin-left: 20px; 
+}
+form.cmxform fieldset.borderless
+{
+	border: 0px;
+}
+form.cmxform label.error,
+label.error {
+	display: none;
+	color: red;
+	font-style: italic;
+	width: 90%;
+	line-height: 1em;
+	font-size: 0.9em;
+	padding: 0px 0px 0px 15px;
+}*/

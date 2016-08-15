@@ -1,0 +1,137 @@
+/*
+ * @author Jorge Barnaby
+ */
+
+ul#menu_nav
+{
+	float:left;
+}
+
+ul#menu_sesion
+{
+	float: right;
+}
+
+li.itemMenu{
+	padding-left: 10px;
+	padding-right:10px;
+	border: 1px;
+	border-right-style:solid;
+	border-color:#999;
+}
+
+ul.menu_top,
+ul.menu_top ul
+{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+ul.menu_top li
+{
+	position: relative;
+	float: left;
+	list-style: none;
+}
+ul.menu_top li ul
+{
+	position: absolute;
+	left: 0px; /* Set 1px less than menu width */
+	width: 170px;
+	background-color: #E0E0E0;/*#D8E6B3;*/
+	border-top: 1px solid #E0E0E0; /*#B2BF8F;*/
+	display: none;
+}
+/* Styles for Menu Items */
+ul.menu_top li a
+{
+	display: block;
+	text-decoration: none;
+	color: black;
+	/*background: #fff; /* IE6 Bug */
+	padding: 5px;
+	margin: 0px;
+	width: auto; /*110px; 150px;*/
+	text-align: center;
+	font-weight: bold;
+	font-size:11px; /*agregado*/
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul.menu_top li
+{
+	float: left;
+	height: 1%;
+}
+* html ul.menu_top li a
+{
+
+}
+/* End */
+
+/* Hover Styles */
+ul.menu_top li a:hover
+{
+	color: #E2144A;
+}
+/* Sub Menu Styles */
+/*#menu_top li ul li a
+{ 
+	padding: 5px;
+	margin: 0px;
+	width: 128px;
+	
+}*/
+/* Sub Menu Styles */
+ul.menu_top li ul li a:link,
+ul.menu_top li ul li a:visited
+{ 
+	padding: 5px 10px 5px 10px;
+	margin: 0px;
+	border-top: 1px solid #999; /*#D8E6B3;*/
+	border-left: 1px solid #999; /*#B2BF8F;*/
+	border-bottom: 1px solid #999; /*#B2BF8F;*/
+	border-right: 1px solid #999;  /*#B2BF8F;*/
+	width: 150px;/*127 sub Menus*/
+	text-align: left;
+	font-weight: normal;
+}
+ul.menu_top li ul li a:hover
+{
+	/*border-top: 1px solid #465F00;
+	border-left: 1px solid #465F00;*/
+	/*border-bottom: 2px solid #465F00;*/
+	/*border-right: 2px solid #465F00;*/
+	background-color: #D51A0D; /*#719A00;*/
+	color: white;
+}
+/* The magic */
+ul.menu_top li:hover ul,
+ul.menu_top li.over ul
+{
+	display: block;
+}
+
+ul.menu_top a
+{
+	padding: 10px;
+	margin: 0px;
+	height: auto !important;
+	
+	border-right: 0px;
+	border-bottom: 0px;
+}
+ul.menu_top a:link,
+ul.menu_top a:visited
+{
+	color: #000;
+	text-decoration: none;
+	padding: 5px;
+}
+ul.menu_top a:hover
+{
+    color: #D4776A;
+	text-decoration: none;
+	
+	border: 0px;
+}

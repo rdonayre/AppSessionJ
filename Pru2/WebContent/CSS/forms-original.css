@@ -1,0 +1,164 @@
+/*
+ * @author Jorge Barnaby
+ */
+
+label
+{
+
+}
+
+input,
+textarea,
+select
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 2px;
+	margin: 0px;
+	border: 1px solid #828194;
+	text-align: right;
+	/*background-color: #F6FAE6;*/
+}
+
+select
+{
+	padding: 2px;
+}
+
+input.readonly
+{
+	background-color: #eee;
+}
+
+input.boton
+{
+	font-size: 0.9em;
+	background-color: white;
+	background-image: url(images/bgbutton.gif);
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	padding: 3px 5px 3px 5px;
+}
+input.btnImp
+{
+	font-size: 1.1em;
+	background-color: white;
+	background-image: url(images/bgbutton.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	padding: 3px 5px 3px 5px;
+	height: 23px;
+}
+
+input.nombre
+{
+	width: 550px;
+}
+
+input.valor_corto,
+input.valor_largo
+{
+	text-align: right;
+}
+
+input.valor_corto
+{
+	width: 25px;
+}
+
+input.valor_largo
+{
+	width: 60px;
+}
+
+input.valor_orden
+{
+	width: 20px;
+}
+
+textarea.comentario
+{
+	width: 550px;
+	height: 100px;
+}
+
+form.cmxform fieldset
+{
+	/*border: 1px solid #CF747C;*/
+	border: 1px solid #CCC;
+	margin: 0px;
+	margin-bottom: 5px;
+	padding: 10px;
+	background-color: inherit;
+}
+form.cmxform legend
+{
+	padding: 2px 4px;
+	font-weight: bold;
+	margin: 0 -7px; /* IE Win */
+	color: #68552D;
+}
+form.cmxform label
+{
+	display: inline-block;
+	line-height: 2.1;
+	vertical-align: top;
+}
+form.cmxform fieldset ol
+{
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #CF747C;
+}
+form.cmxform fieldset li
+{
+	list-style: none;
+	padding: 5px;
+	margin: 0;
+	border-bottom: 1px solid #CF747C;
+}
+form.cmxform fieldset fieldset
+{
+	/*border: 1px solid #CF747C;*/
+	border: 1px solid #CCC;
+	margin: 3px 0 0;
+}
+form.cmxform fieldset fieldset legend
+{
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+form.cmxform fieldset fieldset label
+{
+	display: block;
+	width: auto;
+}
+form.cmxform em
+{
+	font-weight: bold;
+	font-style: normal;
+	color: #f00;
+}
+form.cmxform label
+{
+	width: 150px; /* Width of labels */
+}
+form.cmxform fieldset fieldset label
+{
+	margin-left: 20px; /* Width plus 3 (html space) */
+}
+form.cmxform fieldset.borderless
+{
+	border: 0px;
+}
+form.cmxform label.error,
+label.error {
+	display: none;
+	color: red;
+	font-style: italic;
+	width: 90%;
+	line-height: 1em;
+	font-size: 0.9em;
+	padding: 0px 0px 0px 15px;
+}
